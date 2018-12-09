@@ -1,0 +1,11 @@
+.data
+prompt:.asciiz"How many disks do you have?"
+reply: .asciiz "Moves required are:"
+.text
+li $t1,1 
+li $t2,2
+la $a0,prompt
+li $v0,4
+syscall
+li $v0,5
+syscall
